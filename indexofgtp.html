@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Faculty Subject Entry</title>
+    <link rel="stylesheet" href="stylesofgpt.css" />
+  </head>
+  <body>
+    <form action="db.php" method="post">
+      <h1>Subject Entry Form</h1>
+      <div class="t_form">
+        <form id="subjectForm">
+          <div class="f_div">
+            <label for="facultyName">Faculty Name:</label>
+            <input type="text" id="facultyName" required />
+
+            <label for="subjectName">Subject Name:</label>
+            <input type="text" id="subjectName" required />
+          </div>
+
+          <div class="s_div">
+            <label for="totalCredits">Total Credits:</label>
+            <input type="number" id="totalCredits" required />
+
+            <label for="classSem">Class-Semester:</label>
+            <input type="text" id="classSem" required />
+          </div>
+
+          <div class="t_div">
+            <label for="division">Division:</label>
+            <input type="text" id="division" required />
+
+            <button type="submit">Add Subject</button>
+          </div>
+        </form>
+      </div>
+
+      <button id="showTableButton">Show Table</button>
+      <table id="subjectTable" border="1" cellspacing="0" cellpadding="5">
+        <tr class="t_hading">
+          <th class="t">No.</th>
+          <th class="t">TIME</th>
+          <th class="t">MON</th>
+          <th class="t">TUE</th>
+          <th class="t">WED</th>
+          <th class="t">THUR</th>
+          <th class="t">FRI</th>
+          <th class="t">SAT</th>
+        </tr>
+
+        <tr class="tr_size">
+          <th rowspan="2" class="no">1.</th>
+          <td rowspan="2">8:30 TO 9:30</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="tr_size">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr class="tr_size">
+          <th rowspan="2" class="no">2.</th>
+          <td rowspan="2">9:30 TO 10:30</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="tr_size">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr>
+          <th colspan="8" align="CENTER">BREAK</th>
+        </tr>
+
+        <tr class="tr_size">
+          <th rowspan="2" class="no">3.</th>
+          <td rowspan="2">11 TO 12</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="tr_size">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+
+        <tr class="tr_size">
+          <th rowspan="2" class="no">4.</th>
+          <td rowspan="2">12 TO 1</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr class="tr_size">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
